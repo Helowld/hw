@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="icon"
+        href="https://avatars.githubusercontent.com/u/80638006?s=400&u=f7d44faf274a6e691bfbdcc346f4e2dc51212ee2&v=4"
+        type="image/x-icon">
+
+</head>
+
+<body>
+    <div>
+        {{ range first 10 .Site.RegularPages }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ end }}
+    </div>
+</body>
+
+</html>
