@@ -8,13 +8,11 @@
     <link rel="icon"
         href="https://avatars.githubusercontent.com/u/80638006?s=400&u=f7d44faf274a6e691bfbdcc346f4e2dc51212ee2&v=4"
         type="image/x-icon">
-    <title>Hello World</title>
+    <title>{{ .Title }}</title>
 </head>
 
 <body>
-    {{ block "main" .}}
-    lk
-    {{end}}
+    {{ block "main" .}} {{end}}
 </body>
 
 </html>
